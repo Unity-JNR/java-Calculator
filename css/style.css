@@ -1,56 +1,87 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
+    background-color: #1a1a1a; /* Dark Background Color */
+    color: #fff; /* White Text Color */
   }
-
+  
   .calculator {
-    background-color: #fff;
+    background-color: #333; /* Dark Grey Calculator Background Color */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 20px;
     text-align: center;
   }
-
+  
   .display {
     margin-bottom: 10px;
   }
-
+  
+  input {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #555; /* Dark Border Color */
+    border-radius: 4px;
+    background-color: #666; /* Darker Grey Button Background Color */
+    color: #fff;
+    outline: none;
+  }
+  
   input[type="text"] {
     width: 100%;
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
-  }
-
-  input[type="button"] {
-    width: 48px;
-    height: 48px;
-    font-size: 18px;
-    margin: 5px;
-    cursor: pointer;
     border: none;
-    border-radius: 4px;
+    border-bottom: 1px solid #555; /* Dark Border Color */
+    background-color: #333; /* Dark Grey Background Color */
+    color: #fff;
     outline: none;
   }
-
-  input[type="button"].number {
-    background-color: #f0f0f0;
+  
+  input[type="button"]:hover {
+    background-color: #555; /* Slightly Darker Grey on Hover */
   }
-
-  input[type="button"].operator {
-    background-color: #ff9800;
-    color: #fff;
+  
+  .operator {
+    background-color: #ff8c00; /* Dark Orange Operator Button Background Color */
   }
-
-  input[type="button"].equal {
-    background-color: #2196f3;
-    color: #fff;
+  
+  .equal {
+    background-color: #4caf50; /* Green Equal Button Background Color */
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .calculator {
+      padding: 10px;
+    }
+  
+    input {
+      width: 40px;
+      height: 40px;
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Medium screens (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .calculator {
+      padding: 15px;
+    }
+  }
+  
+  /* Large screens (desktops) */
+  @media only screen and (min-width: 1025px) {
+    .calculator {
+      padding: 20px;
+    }
   }
