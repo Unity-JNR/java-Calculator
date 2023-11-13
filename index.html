@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="calculator">
+  <div class="display">
+    <input type="text" name="display" id="display">
+  </div>
+
+  <div>
+    <input type="button" value="AC" id="clear">
+    <input type="button" value="DE" id="delete">
+    <input type="button" value="/" id="divide" class="operator">
+    <input type="button" value="." id="dot">
+  </div>
+
+  <div>
+    <input type="button" value="7" data-value="7" class="number">
+    <input type="button" value="8" data-value="8" class="number">
+    <input type="button" value="9" data-value="9" class="number">
+    <input type="button" value="*" id="multiply" class="operator">
+  </div>
+
+  <div>
+    <input type="button" value="4" data-value="4" class="number">
+    <input type="button" value="5" data-value="5" class="number">
+    <input type="button" value="6" data-value="6" class="number">
+    <input type="button" value="-" id="subtract" class="operator">
+  </div>
+
+  <div>
+    <input type="button" value="1" data-value="1" class="number">
+    <input type="button" value="2" data-value="2" class="number">
+    <input type="button" value="3" data-value="3" class="number">
+    <input type="button" value="+" id="add" class="operator">
+  </div>
+
+  <div>
+    <input type="button" value="00" data-value="00" class="number">
+    <input type="button" value="0" data-value="0" class="number">
+    <input type="button" value="=" data-value="=" class="equal">
+  </div>
+</div>
+
+<script src="/java/script.js">
+</script>
+
+</body>
+</html>
